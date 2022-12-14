@@ -17,11 +17,11 @@
             <div class="header">
                 <nav class="navbar navbar-expand-lg bg-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Bootstrap</a>
+                        <a class="navbar-brand" href="index.html">Bootstrap</a>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="tweede.html">Pagina 2</a>
@@ -36,7 +36,7 @@
                                     <a class="nav-link" href="vijfde.html">Pagina 5</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="zesde.html">Pagina 6</a>
+                                    <a class="nav-link active" href="zesde.html">Pagina 6</a>
                                 </li>
                             </ul>
                         </div>
@@ -45,13 +45,40 @@
             </div>
 
             <div class="content p-4">
-                <div class="row">
-                    <div class="col">
-                        <div class="alert alert-primary" role="alert" style="width: 300px;">
-                            A simple primary alert—check it out!
-                        </div>
+                <div class="container">
+                    <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Click hier
+                    </button>
 
-                        <button type="button" class="btn btn-primary">Primary</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label class="form-label">Email address</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label">Password</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <div class="col-12 form-check">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label">Check me out</label>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary" onclick="alert('saved')"
+                                                class="form-control">Submit</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
